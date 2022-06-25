@@ -12,7 +12,7 @@ export default function Footer() {
       <div className="flex justify-between px-20 items-center pt-20 pb-16 border-b-[1px] border-black-100">
         <Logo />
         <a href="#home">
-          <img src="src/assets/toTop.svg" />
+          <img src="../assets/toTop.svg" />
         </a>
       </div>
       <section className="flex justify-between px-20 border-b-[1px] border-black-100">
