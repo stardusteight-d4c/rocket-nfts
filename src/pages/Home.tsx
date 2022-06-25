@@ -3,6 +3,11 @@ import CardImg from '../components/CardImg'
 import Footer from '../components/Footer'
 import Nav from '../components/Nav'
 
+import Zoom from 'react-reveal/Zoom'
+import Fade from 'react-reveal/Fade'
+import Rotate from 'react-reveal/Rotate'
+import LightSpeed from 'react-reveal/LightSpeed'
+
 import avatars from '../assets/avatars.png'
 import badge from '../assets/badge.svg'
 import gallery1 from '../assets/cards/gallery1.png'
@@ -30,153 +35,167 @@ function Home() {
         className="h-[1000px] bg-[url('../assets/background.png')] bg-no-repeat bg-cover"
         id="home"
       >
-        <Nav />
-        <section className="flex px-20 mt-[6.15rem] gap-10 items-start">
-          <div className="mx-auto text-lg">
-            Mercado digital para colecionáveis em criptos e tokens não fungível
-            (NFT). Compre, venda e descubra ativos digitais exclusivos para
-            você.
-            <div className="w-full mt-[3.44rem] flex">
-              <img
-                src={avatars}
-                width={170}
-                height={88}
-                className="cursor-pointer"
-              />
-              <span className="self-end ml-[6px] cursor-pointer">
-                <strong>+10</strong>
-                <br /> Artistas selecionados
-              </span>
+        <Zoom>
+          <Nav />
+          <section className="flex px-20 mt-[6.15rem] gap-10 items-start">
+            <div className="mx-auto text-lg">
+              Mercado digital para colecionáveis em criptos e tokens não
+              fungível (NFT). Compre, venda e descubra ativos digitais
+              exclusivos para você.
+              <div className="w-full mt-[3.44rem] flex">
+                <img
+                  src={avatars}
+                  width={170}
+                  height={88}
+                  className="cursor-pointer"
+                />
+                <span className="self-end ml-[6px] cursor-pointer">
+                  <strong>+10</strong>
+                  <br /> Artistas selecionados
+                </span>
+              </div>
             </div>
-          </div>
-          <div className="mx-auto text-5xl font-bold mt-[-1px]">
-            Descubra a verdadeira arte digital e colecione diversas{' '}
-            <strong className="text-red-300">NFTs</strong>
-          </div>
-          <div className="m-auto w-full max-w-[200px]">
-            <img src={badge} width={200} height={200} />
-          </div>
-        </section>
+            <div className="mx-auto text-5xl font-bold mt-[-1px]">
+              Descubra a verdadeira arte digital e colecione diversas{' '}
+              <strong className="text-red-300">NFTs</strong>
+            </div>
+            <div className="m-auto w-full max-w-[200px]">
+              <img src={badge} width={200} height={200} />
+            </div>
+          </section>
 
-        <section className="mt-[100px] px-20 overflow-x-hidden">
-          <div className="mb-[55px] animate-marquee">
-            <img src={gallery1} />
-          </div>
-          <div className="animate-marquee2">
-            <img src={gallery2} />
-          </div>
-        </section>
+          <section className="mt-[100px] px-20 overflow-x-hidden">
+            <div className="mb-[55px] animate-marquee">
+              <img src={gallery1} />
+            </div>
+            <div className="animate-marquee2">
+              <img src={gallery2} />
+            </div>
+          </section>
+        </Zoom>
       </header>
 
       <section className="bg-black-700 h-[100vh] flex border-b-[1px] border-black-200">
         <aside className="w-full max-w-[25vw] h-[100vh] border-r-[1px] border-black-200 flex flex-col justify-evenly items-center">
-          <div className="text-center">
-            <h2 className="text-[3.15rem] font-bold">10K+</h2>
-            <span className="text-xl font-bold text-black-100">Artes</span>
-          </div>
-          <div className="text-center">
-            <h2 className="text-[3.15rem] font-bold">200+</h2>
-            <span className="text-xl font-bold text-black-100">Vendas</span>
-          </div>
-          <div className="text-center">
-            <h2 className="text-[3.15rem] font-bold">20</h2>
-            <span className="text-xl font-bold text-black-100">Artistas</span>
-          </div>
+          <Fade left>
+            <div className="text-center">
+              <h2 className="text-[3.15rem] font-bold">10K+</h2>
+              <span className="text-xl font-bold text-black-100">Artes</span>
+            </div>
+            <div className="text-center">
+              <h2 className="text-[3.15rem] font-bold">200+</h2>
+              <span className="text-xl font-bold text-black-100">Vendas</span>
+            </div>
+            <div className="text-center">
+              <h2 className="text-[3.15rem] font-bold">20</h2>
+              <span className="text-xl font-bold text-black-100">Artistas</span>
+            </div>
+          </Fade>
         </aside>
 
         <div className="relative">
           <div className="flex p-16 gap-32">
-            <div>
-              <p className="text-lg mb-14">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
-                malesuada amet pretium lacus. Id{' '}
-                <a href="#" className="text-red-300 underline">
-                  potenti diam
-                </a>{' '}
-                et cras odio viverra. Amet, velit ut hac sit. Enim ultricies
-                mauris mattis nunc semper.
-              </p>
-              <a className="text-red-300 underline cursor-pointer">
-                Lorem ipsum
-              </a>
-            </div>
-            <div>
-              <p className="text-lg mb-14">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Congue
-                malesuada amet pretium lacus. Id{' '}
-                <a href="#" className="text-red-300 underline">
-                  potenti diam
-                </a>{' '}
-                et cras odio viverra. Amet, velit ut hac sit. Enim ultricies
-                mauris mattis nunc semper.
-              </p>
-              <a className="text-red-300 underline cursor-pointer">
-                Lorem ipsum
-              </a>
-            </div>
+            <Fade bottom>
+              <div>
+                <p className="text-lg mb-14">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Congue malesuada amet pretium lacus. Id{' '}
+                  <a href="#" className="text-red-300 underline">
+                    potenti diam
+                  </a>{' '}
+                  et cras odio viverra. Amet, velit ut hac sit. Enim ultricies
+                  mauris mattis nunc semper.
+                </p>
+                <a className="text-red-300 underline cursor-pointer">
+                  Lorem ipsum
+                </a>
+              </div>
+            </Fade>
+            <Fade bottom>
+              <div>
+                <p className="text-lg mb-14">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Congue malesuada amet pretium lacus. Id{' '}
+                  <a href="#" className="text-red-300 underline">
+                    potenti diam
+                  </a>{' '}
+                  et cras odio viverra. Amet, velit ut hac sit. Enim ultricies
+                  mauris mattis nunc semper.
+                </p>
+                <a className="text-red-300 underline cursor-pointer">
+                  Lorem ipsum
+                </a>
+              </div>
+            </Fade>
           </div>
-          <img src={banner2077} className="block bottom-0 absolute" />
+          <Fade right>
+            <img src={banner2077} className="block bottom-0 absolute" />
+          </Fade>
         </div>
       </section>
 
       <section className="px-20 mt-36 min-h-[100vh] mb-36">
-        <h1 className="mb-28 text-5xl font-bold">
-          <strong className="text-red-300">Populares</strong> da semana
-        </h1>
+        <LightSpeed left>
+          <h1 className="mb-28 text-5xl font-bold">
+            <strong className="text-red-300">Populares</strong> da semana
+          </h1>
+        </LightSpeed>
         <div className="grid grid-cols-3 justify-items-center w-full">
-          <div>
-            <div className="mb-24">
-              <CardImg
-                title="Astronauta 1"
-                author="Mayk Brito"
-                rkt={1.5}
-                image={astronauta1}
-              />
-            </div>
+          <Rotate top left>
             <div>
-              <CardImg
-                title="Astronauta 3"
-                author="João Inácio (Biro)"
-                rkt={3.75}
-                image={astronauta3}
-              />
+              <div className="mb-24">
+                <CardImg
+                  title="Astronauta 1"
+                  author="Mayk Brito"
+                  rkt={1.5}
+                  image={astronauta1}
+                />
+              </div>
+              <div>
+                <CardImg
+                  title="Astronauta 3"
+                  author="João Inácio (Biro)"
+                  rkt={3.75}
+                  image={astronauta3}
+                />
+              </div>
             </div>
-          </div>
+          </Rotate>
           <div className="w-[1px] bg-black-200"></div>
-          <div>
-            <div className="mb-24">
-              <CardImg
-                title="Astronauta 2"
-                author="Jakeliny Gracielly"
-                rkt={2.0}
-                image={astronauta2}
-              />
-            </div>
+          <Rotate top right>
             <div>
-              <CardImg
-                title="Astronauta 4"
-                author="Tamires Santos"
-                rkt={4.3}
-                image={astronauta4}
-              />
+              <div className="mb-24">
+                <CardImg
+                  title="Astronauta 2"
+                  author="Jakeliny Gracielly"
+                  rkt={2.0}
+                  image={astronauta2}
+                />
+              </div>
+              <div>
+                <CardImg
+                  title="Astronauta 4"
+                  author="Tamires Santos"
+                  rkt={4.3}
+                  image={astronauta4}
+                />
+              </div>
             </div>
-          </div>
+          </Rotate>
         </div>
       </section>
 
       <section className="px-20">
         <div className="w-full">
-          <h1 className="text-5xl font-bold">
-            Melhores <strong className="text-red-300">artistas</strong>
-          </h1>
+          <LightSpeed left>
+            <h1 className="text-5xl font-bold">
+              Melhores <strong className="text-red-300">artistas</strong>
+            </h1>
+          </LightSpeed>
           <div className="mt-[120px] grid grid-cols-3 justify-items-center mb-14">
             <div>
               <div className="mb-20">
-                <CardArtists
-                  image={artista1}
-                  author="Mayk Brito"
-                  pics={80}
-                />
+                <CardArtists image={artista1} author="Mayk Brito" pics={80} />
               </div>
               <div>
                 <CardArtists
@@ -188,18 +207,10 @@ function Home() {
             </div>
             <div>
               <div className="mb-20">
-                <CardArtists
-                  image={artista2}
-                  author="Jakeliny G."
-                  pics={99}
-                />
+                <CardArtists image={artista2} author="Jakeliny G." pics={99} />
               </div>
               <div>
-                <CardArtists
-                  image={artista5}
-                  author="Ana Silva"
-                  pics={28}
-                />
+                <CardArtists image={artista5} author="Ana Silva" pics={28} />
               </div>
             </div>
             <div>
@@ -211,11 +222,7 @@ function Home() {
                 />
               </div>
               <div>
-                <CardArtists
-                  image={artista6}
-                  author="Diego F."
-                  pics={20}
-                />
+                <CardArtists image={artista6} author="Diego F." pics={20} />
               </div>
             </div>
           </div>
