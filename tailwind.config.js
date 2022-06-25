@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.tsx'],
-   mode: 'jit',
+  mode: 'jit',
   theme: {
     extend: {
+      screens: {
+        md: { max: '1230px' },
+      },
       animation: {
         'spin-slow': 'spin 20s linear infinite',
         marquee: 'marquee 25s linear infinite',

@@ -11,13 +11,13 @@ import toTop from '../assets/toTop.svg'
 export default function Footer() {
   return (
     <footer className="bg-black-200">
-      <div className="flex justify-between px-20 items-center pt-20 pb-16 border-b-[1px] border-black-100">
+      <div className="flex justify-between px-20 items-center pt-20 pb-16 border-b-[1px] border-black-100 md:px-7 md:mx-auto md:block">
         <Logo />
-        <a href="#home">
+        <a href="#home" className='md:hidden'>
           <img src={toTop} />
         </a>
       </div>
-      <section className="flex justify-between px-20 border-b-[1px] border-black-100">
+      <section className="flex justify-between px-20 border-b-[1px] border-black-100 md:hidden">
         <div className="py-16">
           <h2 className="font-medium text-3xl pb-6">
             Fique por dentro de
@@ -35,7 +35,7 @@ export default function Footer() {
             </button>
           </span>
         </div>
-        <div className="w-[1px] bg-black-100 mx-auto"></div>
+        <div className="w-[1px] bg-black-100 mx-auto md:hidden"></div>
         <div className="flex gap-32 py-16 mx-auto">
           <ul className="text-xl text-black-100 leading-relaxed">
             <span className="text-xl font-bold text-white">Empresa</span>
@@ -109,12 +109,12 @@ export default function Footer() {
         </div>
       </section>
 
-      <section className='flex py-20 px-20 justify-between'>
+      <section className='flex py-20 px-20 justify-between md:inline-block md:px-7'>
         <div>
           <h4><a href="http://www.rocketseat.com.br" target="_blank" className="text-black-100">www.rocketseat.com.br</a></h4>
         </div>
         <div>
-          <ul  className='flex gap-12'>
+          <ul className='flex gap-12 md:hidden'>
             <li>
               <a href="https://www.instagram.com/rocketseat_oficial/" target="_blank">
                 <InstagramLogo size={32} className="text-black-100" />

@@ -32,13 +32,15 @@ function Home() {
   return (
     <main>
       <header
-        className="h-[1000px] bg-[url('../assets/background.png')] bg-no-repeat bg-cover"
+        className="h-[1000px] bg-[url('../assets/background.png')] bg-no-repeat bg-cover md:h-[800px]"
         id="home"
       >
         <Zoom>
-          <Nav />
-          <section className="flex px-20 mt-[6.15rem] gap-10 items-start">
-            <div className="mx-auto text-lg">
+          <div className='md:bg-black-700 md:text-center md:my-8'>
+            <Nav />
+          </div>
+          <section className="flex px-20 mt-[6.15rem] gap-10 items-start md:block md:px-7 md:text-center">
+            <div className="mx-auto text-lg md:hidden">
               Mercado digital para colecionáveis em criptos e tokens não
               fungível (NFT). Compre, venda e descubra ativos digitais
               exclusivos para você.
@@ -55,28 +57,28 @@ function Home() {
                 </span>
               </div>
             </div>
-            <div className="mx-auto text-5xl font-bold mt-[-1px]">
+            <div className="mx-auto text-5xl font-bold mt-[-1px] md:text-4xl md:leading-relaxed md:mb-10">
               Descubra a verdadeira arte digital e colecione diversas{' '}
               <strong className="text-red-300">NFTs</strong>
             </div>
-            <div className="m-auto w-full max-w-[200px]">
+            <div className="m-auto w-full max-w-[200px] md:animate-spin-slow">
               <img src={badge} width={200} height={200} />
             </div>
           </section>
 
           <section className="mt-[100px] px-20 overflow-x-hidden">
-            <div className="mb-[55px] animate-marquee">
+            <div className="mb-[55px] animate-marquee md:hidden">
               <img src={gallery1} />
             </div>
-            <div className="animate-marquee2">
+            <div className="animate-marquee2 md:hidden">
               <img src={gallery2} />
             </div>
           </section>
         </Zoom>
       </header>
 
-      <section className="bg-black-700 h-[100vh] flex border-b-[1px] border-black-200">
-        <aside className="w-full max-w-[25vw] h-[100vh] border-r-[1px] border-black-200 flex flex-col justify-evenly items-center">
+      <section className="bg-black-700 h-[100vh] flex border-b-[1px] border-black-200 md:block md:border-none">
+        <aside className="w-full max-w-[25vw] h-[100vh] border-r-[1px] border-black-200 flex flex-col justify-evenly items-center md:hidden">
           <Fade left>
             <div className="text-center">
               <h2 className="text-[3.15rem] font-bold">10K+</h2>
@@ -94,10 +96,10 @@ function Home() {
         </aside>
 
         <div className="relative">
-          <div className="flex p-16 gap-32">
+          <div className="flex p-16 gap-32 md:block">
             <Fade bottom>
               <div>
-                <p className="text-lg mb-14">
+                <p className="text-lg mb-14 md:text-justify">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Congue malesuada amet pretium lacus. Id{' '}
                   <a href="#" className="text-red-300 underline">
@@ -113,7 +115,7 @@ function Home() {
             </Fade>
             <Fade bottom>
               <div>
-                <p className="text-lg mb-14">
+                <p className="text-lg mb-14 md:hidden">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Congue malesuada amet pretium lacus. Id{' '}
                   <a href="#" className="text-red-300 underline">
@@ -122,25 +124,25 @@ function Home() {
                   et cras odio viverra. Amet, velit ut hac sit. Enim ultricies
                   mauris mattis nunc semper.
                 </p>
-                <a className="text-red-300 underline cursor-pointer">
+                <a className="text-red-300 underline cursor-pointer md:hidden">
                   Lorem ipsum
                 </a>
               </div>
             </Fade>
           </div>
           <Fade right>
-            <img src={banner2077} className="block bottom-0 absolute" />
+            <img src={banner2077} className="block bottom-0 absolute md:relative md:object-cover" />
           </Fade>
         </div>
       </section>
 
-      <section className="px-20 mt-36 min-h-[100vh] mb-36">
+      <section className="px-20 mt-36 min-h-[100vh] mb-36 md:mt-14 md:px-7 md:text-center">
         <LightSpeed left>
-          <h1 className="mb-28 text-5xl font-bold">
+          <h1 className="mb-28 text-5xl font-bold md:text-3xl">
             <strong className="text-red-300">Populares</strong> da semana
           </h1>
         </LightSpeed>
-        <div className="grid grid-cols-3 justify-items-center w-full">
+        <div className="grid grid-cols-3 justify-items-center w-full md:flex md:flex-col md:items-center">
           <Rotate top left>
             <div>
               <div className="mb-24">
@@ -151,7 +153,7 @@ function Home() {
                   image={astronauta1}
                 />
               </div>
-              <div>
+              <div className='md:mb-24'>
                 <CardImg
                   title="Astronauta 3"
                   author="João Inácio (Biro)"
@@ -185,19 +187,19 @@ function Home() {
         </div>
       </section>
 
-      <section className="px-20">
+      <section className="px-20 md:px-0 md:text-center">
         <div className="w-full">
           <LightSpeed left>
-            <h1 className="text-5xl font-bold">
+            <h1 className="text-5xl font-bold md:text-3xl">
               Melhores <strong className="text-red-300">artistas</strong>
             </h1>
           </LightSpeed>
-          <div className="mt-[120px] grid grid-cols-3 justify-items-center mb-14">
+          <div className="mt-[120px] grid grid-cols-3 justify-items-center mb-14 md:block">
             <div>
               <div className="mb-20">
                 <CardArtists image={artista1} author="Mayk Brito" pics={80} />
               </div>
-              <div>
+              <div className='md:mb-20'>
                 <CardArtists
                   image={artista4}
                   author="Tamires Santos"
@@ -209,7 +211,7 @@ function Home() {
               <div className="mb-20">
                 <CardArtists image={artista2} author="Jakeliny G." pics={99} />
               </div>
-              <div>
+              <div className='md:mb-20'>
                 <CardArtists image={artista5} author="Ana Silva" pics={28} />
               </div>
             </div>
