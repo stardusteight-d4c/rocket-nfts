@@ -6,13 +6,15 @@ import {
   YoutubeLogo,
 } from 'phosphor-react'
 
+import toTop from '../assets/toTop.svg'
+
 export default function Footer() {
   return (
     <footer className="bg-black-200">
       <div className="flex justify-between px-20 items-center pt-20 pb-16 border-b-[1px] border-black-100">
         <Logo />
         <a href="#home">
-          <img src="../assets/toTop.svg" />
+          <img src={toTop} />
         </a>
       </div>
       <section className="flex justify-between px-20 border-b-[1px] border-black-100">
