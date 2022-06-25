@@ -7,7 +7,7 @@ function Home() {
   return (
     <main>
       <header
-        className="h-[1000px] bg-[url('/assets/background.png')] bg-no-repeat bg-cover"
+        className="h-[1000px] bg-[url('../assets/background.png')] bg-no-repeat bg-cover"
         id="home"
       >
         <Nav />
@@ -18,7 +18,7 @@ function Home() {
             você.
             <div className="w-full mt-[3.44rem] flex">
               <img
-                src="/assets/avatars.png"
+                src="src/assets/avatars.png"
                 width={170}
                 height={88}
                 className="cursor-pointer"
@@ -34,16 +34,16 @@ function Home() {
             <strong className="text-red-300">NFTs</strong>
           </div>
           <div className="m-auto w-full max-w-[200px]">
-            <img src="/assets/badge.svg" width={200} height={200} />
+            <img src="src/assets/badge.svg" width={200} height={200} />
           </div>
         </section>
 
         <section className="mt-[100px] px-20 overflow-x-hidden">
           <div className="mb-[55px] animate-marquee">
-            <img src="/assets/cards/gallery1.png" />
+            <img src="src/assets/cards/gallery1.png" />
           </div>
           <div className="animate-marquee2">
-            <img src="/assets/cards/gallery2.png" />
+            <img src="src/assets/cards/gallery2.png" />
           </div>
         </section>
       </header>
@@ -95,7 +95,7 @@ function Home() {
               </a>
             </div>
           </div>
-            <img src="/assets/banner2077.png" className='block bottom-0 absolute'/>
+            <img src="src/assets/banner2077.png" className='block bottom-0 absolute'/>
         </div>
       </section>
 
@@ -110,7 +110,7 @@ function Home() {
                 title="Astronauta 1"
                 author="Mayk Brito"
                 rkt={1.5}
-                image="/assets/cards/astronauta-1.png"
+                image="src/assets/cards/astronauta-1.png"
               />
             </div>
             <div>
@@ -118,7 +118,7 @@ function Home() {
                 title="Astronauta 3"
                 author="João Inácio (Biro)"
                 rkt={3.75}
-                image="/assets/cards/astronauta-3.png"
+                image="src/assets/cards/astronauta-3.png"
               />
             </div>
           </div>
@@ -129,7 +129,7 @@ function Home() {
                 title="Astronauta 2"
                 author="Jakeliny Gracielly"
                 rkt={2.0}
-                image="/assets/cards/astronauta-2.png"
+                image="src/assets/cards/astronauta-2.png"
               />
             </div>
             <div>
@@ -137,7 +137,7 @@ function Home() {
                 title="Astronauta 4"
                 author="Tamires Santos"
                 rkt={4.3}
-                image="/assets/cards/astronauta-4.png"
+                image="src/assets/cards/astronauta-4.png"
               />
             </div>
           </div>
@@ -153,14 +153,14 @@ function Home() {
             <div>
               <div className="mb-20">
                 <CardArtists
-                  image="/assets/artists/artista-1.png"
+                  image="src/assets/artists/artista-1.png"
                   author="Mayk Brito"
                   pics={80}
                 />
               </div>
               <div>
                 <CardArtists
-                  image="/assets/artists/artista-4.png"
+                  image="src/assets/artists/artista-4.png"
                   author="Tamires Santos"
                   pics={43}
                 />
@@ -169,14 +169,14 @@ function Home() {
             <div>
               <div className="mb-20">
                 <CardArtists
-                  image="/assets/artists/artista-2.png"
+                  image="src/assets/artists/artista-2.png"
                   author="Jakeliny G."
                   pics={99}
                 />
               </div>
               <div>
                 <CardArtists
-                  image="/assets/artists/artista-5.png"
+                  image="src/assets/artists/artista-5.png"
                   author="Ana Silva"
                   pics={28}
                 />
@@ -185,14 +185,14 @@ function Home() {
             <div>
               <div className="mb-20">
                 <CardArtists
-                  image="/assets/artists/artista-3.png"
+                  image="src/assets/artists/artista-3.png"
                   author="João I. (Biro)"
                   pics={50}
                 />
               </div>
               <div>
                 <CardArtists
-                  image="/assets/artists/artista-6.png"
+                  image="src/assets/artists/artista-6.png"
                   author="Diego F."
                   pics={20}
                 />
@@ -202,7 +202,7 @@ function Home() {
           <div className="group text-center text-xl font-normal cursor-pointer mb-[9.75rem]">
             <span className="inline mr-4">Ver todos os artistas</span>
             <img
-              src="/assets/arrowRed.svg"
+              src="src/assets/arrowRed.svg"
               className="inline animate-bounce group-hover:animate-none"
             />
           </div>
