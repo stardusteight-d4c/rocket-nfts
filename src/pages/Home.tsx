@@ -67,12 +67,8 @@ function Home() {
           </section>
 
           <section className="mt-[100px] px-20 overflow-x-hidden">
-            <div className="mb-[55px] animate-marquee md:hidden">
-              <img src={gallery1} />
-            </div>
-            <div className="animate-marquee2 md:hidden">
-              <img src={gallery2} />
-            </div>
+              <img src={gallery1} className="mb-[55px] animate-marquee mx-0 px-0 md:hidden" />
+              <img src={gallery2} className="mb-[55px] animate-marquees mx-0 px-0 md:hidden" />
           </section>
         </Zoom>
       </header>
@@ -96,7 +92,7 @@ function Home() {
         </aside>
 
         <div className="relative">
-          <div className="flex gap-32 2xl:gap-24 p-16 md:block 2xl:p-12 2xl:px-[13rem]">
+          <div className="flex gap-32 2xl:gap-24 p-16 md:block 2xl:px-[13rem]">
             <Fade bottom>
               <div>
                 <p className="text-lg mb-14 md:text-justify 2xl:text-xl">
