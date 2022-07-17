@@ -96,7 +96,7 @@ function Home() {
         </aside>
 
         <div className="relative">
-          <div className="flex gap-32 2xl:gap-24 p-16 md:block 2xl:mt-auto 2xl:px-[13rem]">
+          <div className="flex gap-32 2xl:gap-24 p-16 md:block 2xl:p-12 2xl:px-[13rem]">
             <Fade bottom>
               <div>
                 <p className="text-lg mb-14 md:text-justify 2xl:text-xl">
@@ -131,7 +131,7 @@ function Home() {
             </Fade>
           </div>
           <Fade right>
-            <img src={banner2077} className="2xl:h-[380px] absolute bottom-0 block md:relative md:object-cover" />
+            <img src={banner2077} className="absolute bottom-0 block md:relative md:object-cover" />
           </Fade>
         </div>
       </section>
