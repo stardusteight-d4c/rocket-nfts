@@ -74,7 +74,7 @@ function Home() {
       </header>
 
       <section className="bg-black-700 flex border-b-[2px] border-black-200 md:block md:border-none">
-        <aside className="w-full max-w-[25vw] h-[100vh] 2xl:h-[80vh] border-r-[2px] border-black-200 flex flex-col justify-evenly items-center md:hidden">
+        <aside className="w-full max-w-[25vw] h-[100vh]  border-r-[2px] border-black-200 flex flex-col justify-evenly items-center md:hidden">
           <Fade left>
             <div className="text-center">
               <h2 className="text-[3.15rem] font-bold">10K+</h2>
@@ -92,7 +92,7 @@ function Home() {
         </aside>
 
         <div className="relative">
-          <div className="flex gap-32 2xl:gap-24 p-16 md:block 2xl:px-[13rem]">
+          <div className="flex gap-32 p-16 md:block 2xl:px-[13rem] 2xl:pt-24">
             <Fade bottom>
               <div>
                 <p className="text-lg mb-14 md:text-justify 2xl:text-xl">
