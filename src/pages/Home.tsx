@@ -31,7 +31,7 @@ import arrowRed from '../assets/arrowRed.svg'
 function Home() {
   return (
     <main>
-      <header
+      <header 
         className="h-[1000px] bg-[url('../assets/background.png')] bg-no-repeat bg-cover md:h-[800px]"
         id="home"
       >
@@ -39,8 +39,8 @@ function Home() {
           <div className='md:bg-black-700 md:text-center md:my-8'>
             <Nav />
           </div>
-          <section className="flex px-20 mt-[6.15rem] gap-10 items-start md:block md:px-7 md:text-center">
-            <div className="mx-auto text-lg md:hidden">
+          <section className="2xl:px-[13rem] flex px-20 mt-[6.15rem] gap-10 items-start md:block md:px-7 md:text-center">
+            <div className="mx-auto text-lg md:hidden 2xl:text-xl">
               Mercado digital para colecionáveis em criptos e tokens não
               fungível (NFT). Compre, venda e descubra ativos digitais
               exclusivos para você.
@@ -57,11 +57,11 @@ function Home() {
                 </span>
               </div>
             </div>
-            <div className="mx-auto text-5xl font-bold mt-[-1px] md:text-4xl md:leading-relaxed md:mb-10">
+            <div className="mx-auto text-5xl font-bold mt-[-2px] md:text-4xl md:leading-relaxed md:mb-10 2xl:text-5xl">
               Descubra a verdadeira arte digital e colecione diversas{' '}
               <strong className="text-red-300">NFTs</strong>
             </div>
-            <div className="m-auto w-full max-w-[200px] md:animate-spin-slow">
+            <div className="m-auto w-full max-w-[200px] 2xl:max-w-[250px] md:animate-spin-slow">
               <img src={badge} width={200} height={200} />
             </div>
           </section>
@@ -77,8 +77,8 @@ function Home() {
         </Zoom>
       </header>
 
-      <section className="bg-black-700 h-[100vh] flex border-b-[1px] border-black-200 md:block md:border-none">
-        <aside className="w-full max-w-[25vw] h-[100vh] border-r-[1px] border-black-200 flex flex-col justify-evenly items-center md:hidden">
+      <section className="bg-black-700 flex border-b-[2px] border-black-200 md:block md:border-none">
+        <aside className="w-full max-w-[25vw] h-[100vh] 2xl:h-[80vh] border-r-[2px] border-black-200 flex flex-col justify-evenly items-center md:hidden">
           <Fade left>
             <div className="text-center">
               <h2 className="text-[3.15rem] font-bold">10K+</h2>
@@ -96,10 +96,10 @@ function Home() {
         </aside>
 
         <div className="relative">
-          <div className="flex p-16 gap-32 md:block">
+          <div className="flex gap-32 2xl:gap-24 p-16 md:block 2xl:mt-auto 2xl:px-[13rem]">
             <Fade bottom>
               <div>
-                <p className="text-lg mb-14 md:text-justify">
+                <p className="text-lg mb-14 md:text-justify 2xl:text-xl">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Congue malesuada amet pretium lacus. Id{' '}
                   <a href="#" className="text-red-300 underline">
@@ -115,7 +115,7 @@ function Home() {
             </Fade>
             <Fade bottom>
               <div>
-                <p className="text-lg mb-14 md:hidden">
+                <p className="text-lg mb-14 md:hidden 2xl:text-xl">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Congue malesuada amet pretium lacus. Id{' '}
                   <a href="#" className="text-red-300 underline">
@@ -131,18 +131,18 @@ function Home() {
             </Fade>
           </div>
           <Fade right>
-            <img src={banner2077} className="block bottom-0 absolute md:relative md:object-cover" />
+            <img src={banner2077} className="2xl:h-[380px] absolute bottom-0 block md:relative md:object-cover" />
           </Fade>
         </div>
       </section>
 
-      <section className="px-20 mt-36 min-h-[100vh] mb-36 md:mt-14 md:px-7 md:text-center">
+      <section className="px-20 2xl:px-[13rem] mt-36 min-h-[100vh] mb-36 md:mt-14 md:px-7 md:text-center">
         <LightSpeed left>
-          <h1 className="mb-28 text-5xl font-bold md:text-3xl">
+          <h1 className="text-5xl font-bold mb-28 md:text-3xl 2xl:ml-[68px]">
             <strong className="text-red-300">Populares</strong> da semana
           </h1>
         </LightSpeed>
-        <div className="grid grid-cols-3 justify-items-center w-full md:flex md:flex-col md:items-center">
+        <div className="grid w-full grid-cols-3 justify-items-center md:flex md:flex-col md:items-center">
           <Rotate top left>
             <div>
               <div className="mb-24">
@@ -163,7 +163,7 @@ function Home() {
               </div>
             </div>
           </Rotate>
-          <div className="w-[1px] bg-black-200"></div>
+          <div className="w-[2px] bg-black-200"></div>
           <Rotate top right>
             <div>
               <div className="mb-24">
@@ -187,10 +187,10 @@ function Home() {
         </div>
       </section>
 
-      <section className="px-20 md:px-0 md:text-center">
+      <section className="px-20 md:px-0 md:text-center 2xl:px-[13rem]">
         <div className="w-full">
           <LightSpeed left>
-            <h1 className="text-5xl font-bold md:text-3xl">
+            <h1 className="text-5xl font-bold md:text-3xl 2xl:ml-[68px]">
               Melhores <strong className="text-red-300">artistas</strong>
             </h1>
           </LightSpeed>

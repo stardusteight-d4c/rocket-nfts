@@ -3,14 +3,14 @@ import Metamask from './Icons/Metamask'
 
 export default function Nav() {
   return (
-    <header className="flex items-center justify-between pt-14 px-20 md:inline-block md:pt-0 md:px-0 md:mx-auto h-16 md:my-auto md:border-black-100">
+    <header className="flex items-center justify-between 2xl:px-[13rem] pt-14 px-20 md:inline-block md:pt-0 md:px-0 md:mx-auto h-16 md:my-auto md:border-black-100">
       <div>
         <a href="#home">
           <Logo />
         </a>
       </div>
-      <div className='md:hidden'>
-        <ul className="flex text-lg font-normal gap-[3.80rem]">
+      <div className="md:hidden">
+        <ul className="flex text-lg 2xl:text-xl font-normal gap-[3.80rem]">
           <li>
             <a href="#">Comprar NFT</a>
           </li>

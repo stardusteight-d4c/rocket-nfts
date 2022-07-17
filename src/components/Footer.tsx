@@ -11,15 +11,15 @@ import toTop from '../assets/toTop.svg'
 export default function Footer() {
   return (
     <footer className="bg-black-200">
-      <div className="flex justify-between px-20 items-center pt-20 pb-16 border-b-[1px] border-black-100 md:px-7 md:mx-auto md:block">
+      <div className="flex justify-between 2xl:px-[13rem] px-20 items-center pt-20 pb-16 border-b-[1px] border-black-100 md:px-7 md:mx-auto md:block">
         <Logo />
         <a href="#home" className='md:hidden'>
           <img src={toTop} />
         </a>
       </div>
-      <section className="flex justify-between px-20 border-b-[1px] border-black-100 md:hidden">
+      <section className="flex justify-between px-20 2xl:px-[13rem] border-b-[1px] border-black-100 md:hidden">
         <div className="py-16">
-          <h2 className="font-medium text-3xl pb-6">
+          <h2 className="pb-6 text-3xl font-medium">
             Fique por dentro de
             <br />
             <strong className="text-red-300">todas as novidades</strong>
@@ -28,16 +28,16 @@ export default function Footer() {
             <input
               type="text"
               placeholder="nft@rocketseat.com.br"
-              className="text-black-100 text-xl bg-black-700 py-5 pl-5 pr-6"
+              className="py-5 pl-5 pr-6 text-xl text-black-100 bg-black-700"
             />
-            <button className="font-bold text-xl text-black-900 bg-white py-5 px-6">
+            <button className="px-6 py-5 text-xl font-bold bg-white text-black-900">
               Enviar
             </button>
           </span>
         </div>
         <div className="w-[1px] bg-black-100 mx-auto md:hidden"></div>
-        <div className="flex gap-32 py-16 mx-auto">
-          <ul className="text-xl text-black-100 leading-relaxed">
+        <div className="flex gap-32 py-16 md:mx-auto 2xl:mr-48">
+          <ul className="text-xl leading-relaxed text-black-100">
             <span className="text-xl font-bold text-white">Empresa</span>
             <li>
               <a href="##" className="cursor-pointer">
@@ -60,7 +60,7 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-          <ul className="text-xl text-black-100 leading-relaxed">
+          <ul className="text-xl leading-relaxed text-black-100">
             <span className="text-xl font-bold text-white">Mapa</span>
             <li>
               <a href="##" className="cursor-pointer">
@@ -83,7 +83,7 @@ export default function Footer() {
               </a>
             </li>
           </ul>
-          <ul className="text-xl text-black-100 leading-relaxed">
+          <ul className="text-xl leading-relaxed text-black-100">
             <span className="text-xl font-bold text-white">Links</span>
             <li>
               <a href="##" className="cursor-pointer">
@@ -109,7 +109,7 @@ export default function Footer() {
         </div>
       </section>
 
-      <section className='flex py-20 px-20 justify-between md:inline-block md:px-7'>
+      <section className='flex justify-between px-20 py-20 md:inline-block md:px-7 2xl:px-[13rem]'>
         <div>
           <h4><a href="http://www.rocketseat.com.br" target="_blank" className="text-black-100">www.rocketseat.com.br</a></h4>
         </div>
